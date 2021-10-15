@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico"/>
     <title>resilia.br</title>
     <link rel="stylesheet" href="./css/style-formulario.css">
@@ -12,50 +14,48 @@
     <header>
         <h1>Resilia</h1>
     </header>
-    <section class="container">
-        <article id="texto">
-            <div class="ser">
-                <h1 id="box">#vem ser dev</h1>
-                <h1>Acreditamos que o futuro do tech está em você!</h1>
+    <section class = "container">
+        <article>
+            <div class = "ser">
+                <h1 id = "box">#vem ser dev</h1>
+                <h1 id = "texto">Acreditamos que o futuro do tech está em você!</h1>
             </div>
-            <div class="justificado">
-                <h2>Somos uma comunidade de pessoas em busca de aprimoramento, esperamos você nas nossas próximas turmas
+            <div class = "comunidade">
+                <h2 id = "subtexto">Somos uma comunidade de pessoas em busca de aprimoramento, esperamos você nas nossas próximas turmas
                     para crescermos juntos.</h2>
-                <figure id=imagens>
-                    <img src="https://image.flaticon.com/icons/png/512/1924/1924414.png" />
-                    <img src="https://image.flaticon.com/icons/png/512/2752/2752481.png" />
-                    <img src="https://image.flaticon.com/icons/png/512/889/889006.png" />
+                <figure class = "imagens">
+                    <img class = "icon" src="https://image.flaticon.com/icons/png/512/1924/1924414.png" />
+                    <img class = "icon" src="https://image.flaticon.com/icons/png/512/2752/2752481.png" />
+                    <img class = "icon" src="https://image.flaticon.com/icons/png/512/889/889006.png" />
                 </figure>
             </div>
         </article>
         <main>
-            <form class="form">
-                <p>Formulário de inscrição para futuros resilientes</p>
-                <br>
+            <form class = "form">
+                <p id = "inscricao">Formulário de inscrição para futuros resilientes</p>
+
                 <div class="input">
-                    <label for="name">Nome completo</label>
+                    <label class = "titleInput" for="name">Nome completo</label>
                     <input class="campo" placeholder="--" type="name" />
-                    <label for="date">Data de nascimento</label>
+                    <label class = "titleInput" for="date">Data de nascimento</label>
                     <input class="campo" placeholder="data de nascimento" type="date" />
-                    <label for="email">email</label>
+                    <label class = "titleInput" for="email">email</label>
                     <input class="campo" placeholder="@" type="email" />
-                    <label for="telefone">telefone</label>
+                    <label class = "titleInput" for="telefone">telefone</label>
                     <input class="campo" placeholder="(xx) xxxx-xxxx" type="phone" />
-                    <label for="boxtext">Como você conheceu a Resilia?</label>
-                    <textarea class="campo" name="boxtext" rows="5" cols="33"></textarea><br>
-                    <input id="button" value="Enviar" type="button"
+                    <label class = "titleInput" for="boxtext">Como você conheceu a Resilia?</label>
+                    <textarea class="campo" name="boxtext" rows="5" cols="33" placeholder="Aproveite esse espaço para contar como chegou até aqui"></textarea><br>
+                    <input class = "titleInput" id="button" value="Enviar" type="button"
                         onclick="alert('Sua inscrição foi realizada! Em breve entraremos em contato')" /> <br>
                     <div class="termos">
-                        <input type="checkbox" id="privacidade" name="privacidade">
-                        <label for="privacidade"> Li e concordo com os termos e políticas de privacidade</label>
+                        <input type="checkbox"  name="privacidade">
+                        <label class = "titleInput" id="privacidade" for="privacidade"> Li e concordo com os termos e políticas de privacidade</label>
                     </div>
                 </div>
             </form>
         </main>
     </section>
-        <footer class="rodape">
-            <span>Copyright © 2021 - Desenvolvido por Bárbara Cruz.</span>
-    </footer>
+
 </body>
 
 </html>

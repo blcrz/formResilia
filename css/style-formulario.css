@@ -11,8 +11,8 @@ header h1{
 }
 .container{
     display: flex;
+    width: 60%;
 }
-
 .ser{
     display: flex;
     align-items: center;
@@ -21,88 +21,137 @@ header h1{
     border: solid;
     width: 2em;
     height: 4em;
-    font-size: 2em;
+    font-size: 3em;
     color: white;
     margin-right: 10%;
 }
-#texto .justificado{
-    margin-right: 50px;
-}
-#texto .justificado h2{
-    text-align: justify;
-    margin-left: 5px;
-    margin-top: 50px;
-}
-
 #texto{
-    width: 60%;
+    font-size: 2em;
 }
-#texto .justificado img{
-    width: 25%;
+#subtexto{
+    text-align: justify;
+    margin: 5%;
+    font-size: 1.8em;;
 }
-.justificado #imagens{
+.imagens{
     display: flex;
     justify-content: center;
-
 }
-.justificado #imagens img{
-    width: 15%
+.icon{
+    width: 15%;
 }
 .form{
     background:whitesmoke;
     position: absolute;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    border-radius: 10px 0px 0px 10px;
+    right: 0%;
+    top: 0%;
+    border-radius: 2% 0% 0% 2%;
     box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, 0.1);
     width: 35% ;
-    padding: 70px 15px 15px 15px;
+    padding: 2% 2% 4% 2%;
 }
-.form p{
-    margin-top: 10px;
-    font-size: 20px;
+#inscricao{
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    line-height: 2em;
 }
-.form .input{
+.input{
     display:flex;
     flex-direction: column;
-    line-height: 2;
 }
-.form .input label{
-    font-size: 15px;
+.titleInput{
+    font-size: 1.2em;
+    line-height: 3em;
 }
-.form .input .campo{
+.campo{
     border-radius: 5px;
     border: none;
     font-family: 'Open Sans';
-}
-.form .input textarea{
     resize: none;
+    font-size: 1.2em;
 }
-.form .input #button{
-    border-radius: 30px;
+#button{
+    border-radius: 30em;
     background: rgb(0,0,0, 0.8);
-    padding: 10px;
+    padding: 1%;
     color: whitesmoke;
     font-family: 'Open Sans';
     font-weight: bolder;
-    font-size: 15px;
-    width: 200px;
+    font-size: 1.1em;
+    width: 40%;
     border: none;
     cursor: pointer;
     align-self: center;
 }
-.form .input #privacidade{
+#privacidade{
     font-size: 20px;
 }
 
-.icone{
-    text-align: center;
-}
-.rodape{
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        margin-top: 5%
+    }
+    .ser{
+        width: 150%;
+    }
+    #box{
+        font-size: 2em;
+        margin: 0% 20% 0% 10%;
+    }
+    #texto{
+        font-size: 1.5em;
+    }
+    .comunidade{
+        width: 160%;
+        margin: 15% 0%;
+    }
+    #subtexto{
+        text-align: center;
+        margin: 15% 5%;
+        font-size: 1.4em;;
+    }
+    .icon{
+        width: 35%;
+    }
+    .form{
+       position: initial;
+       border-radius: 15px;
+       box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, 0.1);
+       width: 145% ;
+       padding: 10%;
+    }
+    #inscricao{
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .titleInput{
+        font-size: 1em;
+        line-height: 3em;
+    }
+    .campo{
+        border-radius: 5px;
+        border: none;
+        font-family: 'Open Sans';
+        resize: none;
+        font-size: 1em;
+    }
+    #button{
+        border-radius: 30em;
+        background: rgb(0,0,0, 0.8);
+        padding: 1%;
+        color: whitesmoke;
+        font-family: 'Open Sans';
+        font-weight: bolder;
+        font-size: 0.8em;
+        width: 40%;
+        border: none;
+        cursor: pointer;
+        align-self: center;
+    }
+    #privacidade{
+        font-size: 1em;
+        line-height: 0em;
+    }
 }
