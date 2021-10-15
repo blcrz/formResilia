@@ -45,6 +45,7 @@ header h1{
     position: absolute;
     right: 0%;
     top: 0%;
+    bottom: 0%;
     border-radius: 2% 0% 0% 2%;
     box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, 0.1);
     width: 35% ;
@@ -54,7 +55,7 @@ header h1{
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 .input{
     display:flex;
@@ -85,10 +86,11 @@ header h1{
     align-self: center;
 }
 #privacidade{
-    font-size: 20px;
+    font-size: 1em;
+    line-height: 0em;
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     .container{
         flex-direction: column;
         margin-top: 5%
@@ -152,6 +154,5 @@ header h1{
     }
     #privacidade{
         font-size: 1em;
-        line-height: 0em;
     }
 }
