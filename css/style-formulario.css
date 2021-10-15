@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+    background: rgb(250, 208 , 0);
+    font-family: 'Open Sans';
+}
+
+header h1{
+    margin: 0px;
+    font-size: 3em;
+}
+.container{
+    display: flex;
+}
+
+.ser{
+    display: flex;
+    align-items: center;
+}
+#box{
+    border: solid;
+    width: 2em;
+    height: 4em;
+    font-size: 2em;
+    color: white;
+    margin-right: 10%;
+}
+#texto .justificado{
+    margin-right: 50px;
+}
+#texto .justificado h2{
+    text-align: justify;
+    margin-left: 5px;
+    margin-top: 50px;
+}
+
+#texto{
+    width: 60%;
+}
+#texto .justificado img{
+    width: 25%;
+}
+.justificado #imagens{
+    display: flex;
+    justify-content: center;
+
+}
+.justificado #imagens img{
+    width: 15%
+}
+.form{
+    background:whitesmoke;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, 0.1);
+    width: 35% ;
+    padding: 70px 15px 15px 15px;
+}
+.form p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.form .input{
+    display:flex;
+    flex-direction: column;
+    line-height: 2;
+}
+.form .input label{
+    font-size: 15px;
+}
+.form .input .campo{
+    border-radius: 5px;
+    border: none;
+    font-family: 'Open Sans';
+}
+.form .input textarea{
+    resize: none;
+}
+.form .input #button{
+    border-radius: 30px;
+    background: rgb(0,0,0, 0.8);
+    padding: 10px;
+    color: whitesmoke;
+    font-family: 'Open Sans';
+    font-weight: bolder;
+    font-size: 15px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+.form .input #privacidade{
+    font-size: 20px;
+}
+
+.icone{
+    text-align: center;
+}
+.rodape{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
